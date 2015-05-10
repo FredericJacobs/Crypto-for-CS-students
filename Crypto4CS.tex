@@ -1,0 +1,83 @@
+\documentclass[11pt]{book}
+\newcommand\st{\mbox{s.t.\ }}
+
+\begin{document}
+
+\section{Introduction to Number Theory}
+\begin{itemize}
+	\item Modular arithmetic
+	\item Exponentiation
+	\item Representation of integers
+	\item Fundamental theorem of arithmetic
+	\item Sieving
+	\item Primes: Mersenne primes, twin primes, Solinas prime
+	\item Prime number theorem
+	\item Goldbach's Conjecture
+	\item Primality tests: Euclid's algorithm
+	\item Congruences
+	\item Chinese remainder problems
+	\item Discrete log problem
+\end{itemize}
+
+
+Discuss algabraic structures.
+
+\section{Introduction to Group Theory}
+\begin{itemize}
+	\item Note about Galois and Abel
+	\item Introduction to groups
+	\item General linear groups
+	\item Abelian/Commutative groups
+	\item Finite groups (show it's abelian)
+	\item Cayley tables (show there is only one finite group of three elements)
+	\item Subgroups. (Show that we only need to show closure and inverse properties)
+	\item Exponentiation on groups
+	\item Generators and Cyclic groups (Klein group: abelian, smallest non cyclic)
+	\item Permutation groups
+	\item Introduction to rings
+	\item Abelian/Commutative rings
+	\item Revisiting the DLP for groups
+\end{itemize}
+
+Group theory is \emph{the study of symmetry}.
+
+
+Group $(G, *)$ is a set of elements $g_i$ satisfying the four
+conditions below, relative to some binary operation $*$.
+
+If the elements of $G$ satisfy the following four properties, then
+$G$ is a group.
+
+\begin{itemize}
+\item $\exists e \in G \;\st \forall g \in G : eg = ge = g$. (Identity.)
+We often write $e=1$ for multiplicative groups, and $e = 0$ for
+additive groups.
+
+\item $\forall x,y,z \in G$ : $(xy)z = x(yz)$. (Associativity.)
+
+\item $\forall x \in G, \exists y \in G \;\st xy = yx = e$. (Inverse.)
+We write $y = x^{-1}$ for multiplication, $y = -x$ for addition.
+
+\item $\forall x,y \in G : xy \in G$. (Closure.)
+\end{itemize}
+
+If commutation holds ($\forall x, y \in G$, $xy = yx$), we say the
+group is Abelian. Non-abelian groups exist and are important. For
+example, consider the group of $N \times N$ matrices with real
+entries and non-zero determinant. Prove this is a group under
+matrix multiplication, and show this group is not commutative.
+
+$H$ is a {\em subgroup} of $G$ if it is a group and its elements
+form a subset of those of $G$. The identity of $H$ is the same as
+the identity of $G$. Once you've shown the elements of $H$ are
+closed (ie, under the binary operation, $b(x,y) \in H$ if $x, y
+\in H$), then associativity in $H$ follows from closure in $H$ and
+associativity in $G$.
+
+For the application to Fermat's Little Theorem you will need to
+know that the set $\{1,x,x^2,\cdots\,x^{n-1}\}$ where $n$ is the
+lowest positive integer \st $x^n = 1$, called the {\em cyclic
+group}, is indeed a subgroup of any group $G$ containing $x$, as
+well as $n$ divides the order of $G$.
+
+\end{document}
